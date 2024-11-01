@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-body{
+body {
   background-color: #111;
+}
+
+#taskList::-webkit-scrollbar{
+  display: none;
 }
