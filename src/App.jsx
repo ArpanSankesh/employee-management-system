@@ -1,6 +1,6 @@
 import Login from "./components/Auth/Login"
-import EmployeeDashboard from "./components/DashBoard/EmployeeDashboard";
-import AdminDashboard from "./components/DashBoard/AdminDashboard";
+// import EmployeeDashboard from "./components/DashBoard/EmployeeDashboard";
+// import AdminDashboard from "./components/DashBoard/AdminDashboard";
 
 
 const App = () => {
