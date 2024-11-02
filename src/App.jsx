@@ -1,17 +1,16 @@
-// import Login from "./components/Auth/Login"
-// import EmployeeDashboard from "./components/DashBoard/EmployeeDashboard";
-
+import Login from "./components/Auth/Login"
+import EmployeeDashboard from "./components/DashBoard/EmployeeDashboard";
 import AdminDashboard from "./components/DashBoard/AdminDashboard";
 
 
 const App = () => {
   return (
     <>
-      {/* <Login /> */}
+      <Login />
 
       {/* <EmployeeDashboard /> */}
 
-    <AdminDashboard />
+    {/* <AdminDashboard /> */}
 
     </>
   );
