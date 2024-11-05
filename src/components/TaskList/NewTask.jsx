@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-
-
 const NewTask = ({data}) => {
   return (
     <div className=" flex-shrink-0 rounded-lg h-full w-[350px] bg-blue-500 p-5 ">
