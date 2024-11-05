@@ -7,6 +7,8 @@ import { AuthContext } from "./context/AuthProvider";
 
 const App = () => {
   const [user, setUser] = useState(null);
+  console.log(user);
+  
   const [loggedInUserData, setLoggedInUserData] = useState(null)
   const authData = useContext(AuthContext);
 
@@ -28,7 +30,7 @@ const App = () => {
       if (employee) {
         setUser("employee");
         setLoggedInUserData(employee)
-        localStorage.setItem("loggedInUser",JSON.stringify({ role: "employee" }));
+        localStorage.setItem("loggedInUser",JSON.stringify({ role: "employee", data: employee }));
       }
     } else {
       alert("Invalid ");

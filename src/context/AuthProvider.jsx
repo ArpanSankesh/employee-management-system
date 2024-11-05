@@ -6,7 +6,6 @@ export const AuthContext = createContext()
 
 // eslint-disable-next-line react/prop-types
 const AuthProvider = ({children}) => {
-
     const [userData, setUserData] = useState([])
     useEffect(() => {
       setLocalStorage()
