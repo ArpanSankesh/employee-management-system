@@ -7,7 +7,6 @@ import { AuthContext } from "./context/AuthProvider";
 
 const App = () => {
   const [user, setUser] = useState(null);
-  console.log(user);
   
   const [loggedInUserData, setLoggedInUserData] = useState(null)
   const authData = useContext(AuthContext);
