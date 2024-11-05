@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react"
-import { getLocalStorage } from "../utils/LocalStorage"
+import { getLocalStorage, setLocalStorage } from "../utils/LocalStorage"
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext()
@@ -9,6 +9,7 @@ const AuthProvider = ({children}) => {
 
     const [userData, setUserData] = useState([])
     useEffect(() => {
+      setLocalStorage()
         const { employees, admin } = getLocalStorage();
         setUserData({ employees, admin });
     }, []);

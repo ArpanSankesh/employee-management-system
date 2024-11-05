@@ -1,7 +1,7 @@
 const employees = [
   {
     Id: 1,
-    name: "Amit Sharma",
+    name: "Amit",
     email: "employee1@example.com",
     password: "123",
     tasks: [
@@ -12,7 +12,7 @@ const employees = [
         failed: false,
         title: "Design new homepage",
         description: "Create a responsive design for the new homepage layout.",
-        date: "2024-10-31",
+        date: "31 October 2024",
         category: "design"
       },
       {
@@ -22,7 +22,7 @@ const employees = [
         failed: false,
         title: "Fix login bug",
         description: "Resolve issue with user login not redirecting properly.",
-        date: "2024-10-25",
+        date: "25 October 2024",
         category: "dev"
       },
       {
@@ -32,7 +32,7 @@ const employees = [
         failed: false,
         title: "Update UI icons",
         description: "Replace old icons with updated versions.",
-        date: "2024-11-01",
+        date: "01 November 2024",
         category: "design"
       }
     ],
@@ -45,7 +45,7 @@ const employees = [
   },
   {
     Id: 2,
-    name: "Priya Mehta",
+    name: "Priya",
     email: "employee2@example.com",
     password: "123",
     tasks: [
@@ -56,7 +56,7 @@ const employees = [
         failed: false,
         title: "Optimize backend queries",
         description: "Improve database query performance for faster load times.",
-        date: "2024-10-30",
+        date: "30 October 2024",
         category: "dev"
       },
       {
@@ -66,7 +66,7 @@ const employees = [
         failed: false,
         title: "Deploy staging environment",
         description: "Deploy a new build to the staging environment for testing.",
-        date: "2024-10-28",
+        date: "28 October 2024",
         category: "dev"
       }
     ],
@@ -79,7 +79,7 @@ const employees = [
   },
   {
     Id: 3,
-    name: "Rajesh Kumar",
+    name: "Rajesh",
     email: "employee3@example.com",
     password: "123",
     tasks: [
@@ -90,7 +90,7 @@ const employees = [
         failed: true,
         title: "Setup monitoring tools",
         description: "Implement monitoring for server health.",
-        date: "2024-10-26",
+        date: "26 October 2024",
         category: "dev"
       },
       {
@@ -100,7 +100,7 @@ const employees = [
         failed: false,
         title: "Design login page",
         description: "Redesign the login page for a better user experience.",
-        date: "2024-11-01",
+        date: "01 November 2024",
         category: "design"
       },
       {
@@ -110,7 +110,7 @@ const employees = [
         failed: false,
         title: "Write API documentation",
         description: "Document all REST API endpoints.",
-        date: "2024-10-27",
+        date: "27 October 2024",
         category: "dev"
       }
     ],
@@ -123,7 +123,7 @@ const employees = [
   },
   {
     Id: 4,
-    name: "Sneha Iyer",
+    name: "Sneha",
     email: "employee4@example.com",
     password: "123",
     tasks: [
@@ -134,7 +134,7 @@ const employees = [
         failed: false,
         title: "Create test cases",
         description: "Develop test cases for new features.",
-        date: "2024-10-29",
+        date: "29 October 2024",
         category: "dev"
       },
       {
@@ -144,7 +144,7 @@ const employees = [
         failed: false,
         title: "UI improvements",
         description: "Polish UI elements for better consistency.",
-        date: "2024-10-28",
+        date: "28 October 2024",
         category: "design"
       }
     ],
@@ -157,7 +157,7 @@ const employees = [
   },
   {
     Id: 5,
-    name: "Anil Reddy",
+    name: "Anil",
     email: "employee5@example.com",
     password: "123",
     tasks: [
@@ -168,7 +168,7 @@ const employees = [
         failed: false,
         title: "Bug fixing spree",
         description: "Tackle the backlog of minor UI bugs.",
-        date: "2024-11-02",
+        date: "02 November 2024",
         category: "dev"
       },
       {
@@ -178,7 +178,7 @@ const employees = [
         failed: true,
         title: "Database migration",
         description: "Migrate database schema to support new features.",
-        date: "2024-10-30",
+        date: "30 October 2024",
         category: "dev"
       },
       {
@@ -188,7 +188,7 @@ const employees = [
         failed: false,
         title: "Design system update",
         description: "Update the design system for consistent styles.",
-        date: "2024-11-01",
+        date: "01 November 2024",
         category: "design"
       }
     ],

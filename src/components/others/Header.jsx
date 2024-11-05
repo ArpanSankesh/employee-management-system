@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 
-// eslint-disable-next-line react/prop-types
 const Header = ({data}) => {
+  console.log(data);
+  
   return (
     <div className=" text-white flex justify-between items-center px-3">
         <h1 className="text-xl font-medium">Hello, <br /> <span className="text-3xl font-semibold">{data.name} 👋</span></h1>
