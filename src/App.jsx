@@ -7,16 +7,16 @@ import { AuthContext } from "./context/AuthProvider";
 
 const App = () => {
   const [user, setUser] = useState(null);
-  
-  const [loggedInUserData, setLoggedInUserData] = useState(null)
+
+  const [loggedInUserData, setLoggedInUserData] = useState(null);
   const authData = useContext(AuthContext);
 
   useEffect(() => {
     const loggedInUser = localStorage.getItem("loggedInUser");
     if (loggedInUser) {
-      const userData = JSON.parse(loggedInUser)
+      const userData = JSON.parse(loggedInUser);
       setUser(userData.role);
-      setLoggedInUserData(userData.data)
+      setLoggedInUserData(userData.data);
     }
   }, []);
 
@@ -25,11 +25,16 @@ const App = () => {
       setUser("admin");
       localStorage.setItem("loggedInUser", JSON.stringify({ role: "admin" }));
     } else if (authData) {
-      const employee = authData.employees.find((e) => (email === e.email && password === e.password));
+      const employee = authData.employees.find(
+        (e) => email === e.email && password === e.password
+      );
       if (employee) {
         setUser("employee");
-        setLoggedInUserData(employee)
-        localStorage.setItem("loggedInUser",JSON.stringify({ role: "employee", data: employee }));
+        setLoggedInUserData(employee);
+        localStorage.setItem(
+          "loggedInUser",
+          JSON.stringify({ role: "employee", data: employee })
+        );
       }
     } else {
       alert("Invalid ");
@@ -39,7 +44,11 @@ const App = () => {
   return (
     <>
       {!user ? <Login handelLogin={handelLogin} /> : ""}
-      {user == "admin" ? <AdminDashboard /> : (user == "employee" ? <EmployeeDashboard data={loggedInUserData} /> : null) }
+      {user == "admin" ? (
+        <AdminDashboard />
+      ) : user == "employee" ? (
+        <EmployeeDashboard data={loggedInUserData} />
+      ) : null}
     </>
   );
 };
