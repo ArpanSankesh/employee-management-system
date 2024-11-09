@@ -2,7 +2,7 @@
 
 // import { useState } from "react"
 
-const Header = () => {
+const Header = (props) => {
   // const [username, setUsername] = useState('')
 
   // if(!username){
@@ -10,6 +10,9 @@ const Header = () => {
   // }else{
   //   setUsername(data.name)
   // }
+
+  console.log(props.changeUser);
+  
 
   const logOutUser = () => {
     localStorage.setItem('loggedInUser','')
@@ -25,3 +28,4 @@ const Header = () => {
 }
 
 export default Header
+
