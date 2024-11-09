@@ -11,12 +11,12 @@ const Header = (props) => {
   //   setUsername(data.name)
   // }
 
-  console.log(props.changeUser);
   
-
+  
   const logOutUser = () => {
     localStorage.setItem('loggedInUser','')
-    window.location.reload()
+    // window.location.reload()
+    props.changeUser('')
   }
   
   return (
